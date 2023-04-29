@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import { Aboutme } from '../components/Aboutme/Aboutme'
-import { Header } from '../components/Header/Header'
-import { Main } from '../components/Main/Main'
-import { Project } from '../components/Projects/Projects'
-import { Skills } from '../components/Skills/Skills'
+import Aboutme from '../components/Aboutme/Aboutme'
+import Header from '../components/Header/Header'
+import Main from '../components/Main/Main'
+import Project from '../components/Projects/Projects'
+import Skills from '../components/Skills/Skills'
 import { motion, useScroll } from 'framer-motion'
-import { Contact } from '../components/Contact/Contact'
-import { Footer } from '../components/Footer/Footer'
+import Contact from '../components/Contact/Contact'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
-export function Header() {
+export default function Header() {
 
   const scrollTo = (id: string): void => {
     document.getElementById(id)?.scrollIntoView({

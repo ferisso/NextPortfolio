@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ChevronUp } from 'react-feather';
 import { motion } from 'framer-motion';
 
-export function BackToTopButton() {
+export default function BackToTopButton() {
 
   const scroll = () => {
     window.scroll({

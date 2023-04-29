@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Facebook, Linkedin, GitHub, Instagram } from "react-feather";
 
 
-export function SideBarIcons() {
+export default function SideBarIcons() {
 
   const [scrollValue, setScrollValue] = useState<Number>(0)
 

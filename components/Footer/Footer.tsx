@@ -1,6 +1,6 @@
 
 
-export function Footer() {
+export default function Footer() {
   return (
     <div className="w-full h-8 bg-[#0a0f1b] flex justify-center items-center text-center">
       <span className="text-white text-xs font-thin">

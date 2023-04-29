@@ -1,9 +1,6 @@
-import { motion } from "framer-motion"
-import { useRef } from "react";
-import CardSkill from "../../components/CardSkill/CardSkill";
-import SkillAvatar from "../../components/SkillAvatar/SkillAvatar"
+import CardSkill from "../CardSkill/CardSkill";
 
-export function Skills() {
+export default function Skills() {
   const skills = [
     {
       title: 'Web development',

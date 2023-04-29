@@ -2,7 +2,7 @@ import { motion, useScroll } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 
-export function Main() {
+export default function Main() {
   const [word, setWord] = useState([
     'Creating',
     'Programing',

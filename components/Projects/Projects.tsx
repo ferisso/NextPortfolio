@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
-import Waves from "../../components/Waves/Waves"
+import Waves from "../Waves/Waves"
 
-export function Project() {
+export default function Project() {
 
   const [isOpen, setIsOpen] = useState(false)
   const [item, setItem] = useState(5)

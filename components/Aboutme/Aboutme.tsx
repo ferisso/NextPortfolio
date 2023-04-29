@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from 'framer-motion'
 
-export function Aboutme() {
+export default function Aboutme() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [numberOfLines, setNumberOfLines] = useState<number>(0);

@@ -8,7 +8,7 @@ const buttons = [
   { icon: <Facebook size={32} />, href: 'https://www.facebook.com/fernando.risso.9022/' },
 ]
 
-export function Contact() {
+export default function Contact() {
   return (
     <section className="h-[70vh] bg-[#ffd300] w-full flex flex-col justify-around px-8 sm:px-24" id="contact">
       <div className="text-3xl sm:text-6xl font-semibold font-sans">
