@@ -1,15 +1,12 @@
 import Head from 'next/head'
-import { Aboutme } from './Aboutme/Aboutme'
+import { Aboutme } from '../components/Aboutme/Aboutme'
 import { Header } from '../components/Header/Header'
-import { Main } from './Main/Main'
-import { Project } from './Projects/Projects'
-import { Skills } from './Skills/Skills'
+import { Main } from '../components/Main/Main'
+import { Project } from '../components/Projects/Projects'
+import { Skills } from '../components/Skills/Skills'
 import { motion, useScroll } from 'framer-motion'
-import { Contact } from './Contact/Contact'
-import { BackToTopButton } from '../components/BackToTopButton/BackToTopButton'
+import { Contact } from '../components/Contact/Contact'
 import { Footer } from '../components/Footer/Footer'
-import { SideBarIcons } from '../components/SideBarIcons/SideBarIcons'
-import Waves from '../components/Waves/Waves'
 
 export default function Home() {
 
