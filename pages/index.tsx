@@ -26,13 +26,11 @@ export default function Home() {
       </Head>
       <motion.div style={{ scaleX: scrollYProgress }} className='bg-black h-1 fixed w-full z-30' />
       <Header />
-      {/* <SideBarIcons /> */}
       <Main />
       <Aboutme />
       <Skills />
       <Project />
       <Contact />
-      {/* <BackToTopButton /> */}
       <Footer />
     </div>
   )
