@@ -10,7 +10,7 @@ interface WavesProps {
 export default function Waves({ openWave, closeWave }: WavesProps) {
 
   const waveVariant = {
-    open: { y: '-100vh' },
+    open: { height: '100vh', y: '-100vh' },
     closed: { y: '0' },
   }
 
@@ -53,7 +53,7 @@ export default function Waves({ openWave, closeWave }: WavesProps) {
         animate={openWave ? 'open' : 'closed'}
         variants={modalVariant}
         transition={{ duration: 2 }}
-        style={{ zIndex: !waveTimed ? '0' : 999, position: openWave ? 'fixed' : 'absolute' }}
+        style={{ zIndex: !waveTimed ? '0' : 999 }}
       >
         {
           openWave &&
