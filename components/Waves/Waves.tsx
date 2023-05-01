@@ -53,7 +53,7 @@ export default function Waves({ openWave, closeWave }: WavesProps) {
         animate={openWave ? 'open' : 'closed'}
         variants={modalVariant}
         transition={{ duration: 2 }}
-        style={{ zIndex: !waveTimed ? '0' : 999 }}
+        style={{ zIndex: !waveTimed ? '0' : 999, position: openWave ? 'fixed' : 'absolute' }}
       >
         {
           openWave &&

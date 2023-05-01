@@ -28,13 +28,13 @@ export default function Skills() {
     },
   ]
   return (
-    <section className="h-[78vh] bg-black w-full pt-16 sm:px-24 px-8" id="skills">
+    <section className="sm:h-[78vh] bg-black w-full pt-16 sm:px-24 px-8" id="skills">
       <p className="font-bold text-4xl text-[#f4d300]">
         What do I work with?
       </p>
       <p className="text-[#f4d300] font-thin text-lg">Here some of my services</p>
       <div
-        className="w-full h-full grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6 py-12"
+        className="w-full sm:h-full grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6 py-12"
       >
         {
           skills.map((item, key) => {

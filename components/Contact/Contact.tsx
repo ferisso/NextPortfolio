@@ -10,8 +10,8 @@ const buttons = [
 
 export default function Contact() {
   return (
-    <section className="h-[70vh] bg-[#ffd300] w-full flex flex-col justify-around px-8 sm:px-24" id="contact">
-      <div className="text-3xl sm:text-6xl font-semibold font-sans">
+    <section className="sm:h-[70vh] bg-[#ffd300] w-full flex flex-col justify-around px-8 sm:px-24" id="contact">
+      <div className="text-3xl mt-4 sm:text-6xl font-semibold font-sans">
         <p>Whenever, wherever.</p>
         <p>We're meant to work</p>
         <p>together</p>
@@ -25,7 +25,7 @@ export default function Contact() {
         </p>
         <p>I have an inbox zero rule so i'll see your message and I'll reply at least one smiley. I promise.</p>
       </div>
-      <div className="w-full bg-black h-24 rounded-xl flex justify-around items-center">
+      <div className="w-full bg-black sm:h-24 h-6 sm:py-0 py-8 rounded-xl flex justify-around items-center my-4">
         {
           buttons.map((item, key) => {
             return (

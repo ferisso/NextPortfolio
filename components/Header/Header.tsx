@@ -68,9 +68,9 @@ export default function Header() {
 
 
   return (
-    <div className="w-full h-16 fixed flex justify-center top-0 z-20 mt-6">
+    <div className="w-full h-16 fixed flex justify-center top-0 z-20 mt-6 px-4">
       <motion.div
-        className="w-[500px] flex justify-evenly items-center bg-[#2d2d2dcc] rounded-lg text-white font-thin text-sm backdrop-blur-md"
+        className="w-[500px] flex justify-evenly items-center bg-[#2d2d2dcc] rounded-lg text-white font-thin text-sm backdrop-blur-md p-2"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -79,7 +79,7 @@ export default function Header() {
           buttons.map((item, index) => {
             return (
               <button
-                className="tracking-widest p-3 rounded-lg hover:bg-[#3b3b3b] transition-colors duration-500"
+                className="tracking-widest p-3 rounded-lg hover:bg-[#3b3b3b] transition-colors duration-500 text-xs"
                 key={item.id}
                 onClick={() => changeButtons(index)}
                 style={{ background: item.isSelected ? '#3b3b3b' : 'none' }}
