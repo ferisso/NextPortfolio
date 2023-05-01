@@ -68,7 +68,7 @@ export default function Header() {
 
 
   return (
-    <div className="w-full h-16 fixed flex justify-center top-0 z-20 mt-6 px-4">
+    <div className="w-full h-16 fixed sm:flex justify-center top-0 z-20 mt-6 px-4 hidden">
       <motion.div
         className="w-[500px] flex justify-evenly items-center bg-[#2d2d2dcc] rounded-lg text-white font-thin text-sm backdrop-blur-md p-2"
         initial={{ opacity: 0, y: -100 }}

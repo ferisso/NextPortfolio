@@ -32,7 +32,7 @@ export default function Main() {
 
 
   return (
-    <div className="h-[100vh] min-h-[950px] bg-[#FFD300] pt-48 sm:pt-96 sm:px-24 px-8 font-medium">
+    <div className="sm:h-[100vh] sm:min-h-[950px] bg-[#FFD300] pt-32 sm:pt-96 sm:px-24 px-8 font-medium">
       <div className='uppercase sm:text-7xl text-4xl block max-h-[40px] sm:max-h-[72px] overflow-y-hidden noScrollBar'>
         {word.map((item, i) => {
           return <motion.p animate={{
@@ -49,12 +49,12 @@ export default function Main() {
           Future.
         </p>
       </div>
-      <div className='flex text-zinc-800 sm:flex-row flex-col sm:gap-0 gap-4'>
+      <div className='flex text-zinc-800 sm:flex-row flex-col sm:gap-0 gap-4 py-8'>
         <p className='mr-16 max-w-[560px]'>
           Hey!! Welcome to my portfolio! I'm excited to have you here and share all my recently work to you. This portfolio is a collection of my projects and experiences as a software engineer, and I hope you'll find it informative and engaging.
         </p>
         <p className='max-w-[560px]'>
-          I have more than 5 years of experience in software engineering, and I specialize in web development. I've had the opportunity to work on a variety of projects in my career, and I'am currently working @SAASTEC_NETWORK.
+          I have more than 5 years of experience in software engineering, and I specialize in web development. I've had the opportunity to work on a variety of projects in my career, and I'am currently working <strong>@SAASTEC_NETWORK</strong>.
         </p>
       </div>
     </div>

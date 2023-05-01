@@ -30,9 +30,9 @@ export default function Aboutme() {
 
   return (
     <section className="sm:h-[100vh] bg-black w-full pt-10" id='about'>
-      <motion.div className="absolute h-full lg:w-[482px] w-full bg-topo bg-no-repeat" />
-      <div className="flex justify-end">
-        <div className="text-white uppercase text-end lg:mt-28 lg:mr-24 mr-4">
+      <motion.div className="absolute h-full lg:w-[482px] w-full max-h-[80vh] bg-topo bg-no-repeat" />
+      <div className="flex sm:justify-end justify-center">
+        <div className="text-white uppercase sm:text-end text-center lg:mt-28 lg:mr-24 mr-4">
           <p className="lg:text-6xl font-thin">MORE THAN</p>
           <p className="lg:text-8xl font-bold">{numberOfLines.toFixed(0)}</p>
           <p className="lg:text-6xl font-thin">LINES OF CODE</p>
