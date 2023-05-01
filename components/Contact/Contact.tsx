@@ -17,7 +17,7 @@ export default function Contact() {
         <p>together</p>
       </div>
       <div className="flex gap-2 sm:gap-20 text-lg sm:text-2xl">
-        <p className="max-w-xs font-bold">
+        <p className="max-w-xs font-bold mt-4">
           Contact me for full-time jobs,
           freelance projects,
           design and tech advices
