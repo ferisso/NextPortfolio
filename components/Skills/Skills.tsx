@@ -34,7 +34,7 @@ export default function Skills() {
       </p>
       <p className="text-[#f4d300] font-thin text-lg">Here some of my services</p>
       <div
-        className="w-full sm:h-full grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6 py-12"
+        className="w-full sm:h-full grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6 pb-28 pt-8"
       >
         {
           skills.map((item, key) => {

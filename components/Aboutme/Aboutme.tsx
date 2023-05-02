@@ -38,7 +38,7 @@ export default function Aboutme() {
           <p className="lg:text-6xl font-thin">LINES OF CODE</p>
         </div>
       </div>
-      <div className="flex justify-between lg:ml-24 sm:mt-10 mt-2">
+      <div className="flex justify-between lg:ml-24 mt-8">
         <div className="text-white max-w-lg lg:mt-[-5rem] lg:px-0 px-8">
           <p className="font-bold">
             My name is Fernando Nogueira risso. I'm passionate about creating innovative solutions to complex problems and enjoy working with cutting-edge technologies to bring those solutions to life.
