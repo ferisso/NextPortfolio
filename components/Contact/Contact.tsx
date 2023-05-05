@@ -29,7 +29,7 @@ export default function Contact() {
         {
           buttons.map((item, key) => {
             return (
-              <a className="text-white cursor-pointer hover:text-[#f4d300] transition-colors duration-300" key={key} href={item.href} target="_blank">
+              <a className="text-white cursor-pointer hover:text-[#ffd300] transition-colors duration-300" key={key} href={item.href} target="_blank">
                 {item.icon}
               </a>
             )

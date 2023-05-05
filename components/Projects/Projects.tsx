@@ -1,21 +1,22 @@
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
-import { Lock } from "react-feather"
+import { Lock, X } from "react-feather"
+import Dialog from "../Dialog/Dialog"
 import Waves from "../Waves/Waves"
 
 export default function Project() {
 
-  const [isOpen, setIsOpen] = useState(false)
-  const [item, setItem] = useState(5)
+  const [isOpen, setIsOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState<number>(681);
+  const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const close = () => {
     setIsOpen(!isOpen);
   }
 
-  const [screenWidth, setScreenWidth] = useState<number>(681);
 
   useEffect(() => {
-    setScreenWidth(window.innerWidth)
+    setScreenWidth(window.innerWidth);
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
@@ -23,57 +24,76 @@ export default function Project() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-
+  const selectProject = (project: any) => {
+    setSelectedProject(project);
+    setIsOpen(true);
+  }
 
   const projects = [
     {
-      name: 'E-parking',
-      img: '/eparking.png',
-      type: 'Full-stack | UI/UX',
-      text: 'The plataform that changed the way you park your car!',
-      isLock: false,
-    },
-    {
       name: '[LeadsVance]',
       img: '/leadsvance.png',
-      type: 'Full-stack | UI/UX',
+      type: 'Fullstack | UI/UX',
       text: 'Simply the best plataform to manage your leads!',
+      fullText: 'Managing leads can be a time-consuming and tedious process for businesses. However, a new project aims to simplify this process by automating the task of sending WhatsApp messages and SMS to leads. Using this project, businesses would be able to upload their lead list and create customized messages to be sent automatically. The messages could be tailored to specific segments or stages of the lead funnel, allowing for more effective communication and higher conversion rates',
       isLock: false,
     },
     {
       name: 'SaveNature',
       img: '/savenature.png',
-      type: 'Full-stack | UI/UX',
+      type: 'Fullstack | UI/UX',
       text: 'Want report an ambiental crime? You already know where to go!',
+      fullText: "The project in question would enable individuals to report environmental crimes by pinpointing the location of the crime on a map. This would make it easier for people to report these crimes and for authorities to take action. Users would simply need to mark the location of the crime on the project's app, along with additional details about the crime. The report would then be forwarded to the appropriate authorities for investigation and enforcement.",
+      isLock: false,
+    },
+    {
+      name: 'E-parking',
+      img: '/eparking.png',
+      type: 'Fullstack | UI/UX',
+      text: 'The plataform that changed the way you park your car!',
+      fullText: "With the increasing number of vehicles on the road, finding a parking spot can be a major challenge. However, a new project aims to make this process easier by enabling users to reserve parking spots in advance via a website. Using the website, users would be able to select a parking lot and a specific parking spot that they would like to reserve. They could also specify the date and time they need the spot, and pay for the reservation online.",
       isLock: false,
     },
     {
       name: 'SaaSTec APP',
       img: '/saastec.png',
-      type: 'Full-stack | UI/UX',
+      type: 'Fullstack | UI/UX',
+      text: 'TOP SECRET 🤫',
+      isLock: true,
+    },
+    {
+      name: 'SaaSAuto',
+      img: '/saasauto.png',
+      type: 'Front-end',
+      text: 'TOP SECRET 🤫',
+      isLock: true,
+    },
+    {
+      name: 'SaaSRetail',
+      img: '/saasretail.png',
+      type: 'Fullstack',
+      text: 'TOP SECRET 🤫',
+      isLock: true,
+    },
+    {
+      name: 'SaaSHub',
+      img: '/saashub.png',
+      type: 'Fullstack',
       text: 'TOP SECRET 🤫',
       isLock: true,
     },
   ]
 
-  useEffect(() => {
-    if (item !== 5) {
-      const el = document.getElementsByTagName('body')
-      el[0].style.overflow = 'hidden'
-    }
-  })
-
   return (
     <section id="projects">
       <div className="bg-black w-full px-8 pb-56 sm:pt-16">
         {
-          screenWidth > 680 ?
+          screenWidth > 639 ?
             projects.map((item, key) => {
               return (
-
                 <motion.div
                   key={key}
-                  className="flex justify-around gap-4 items-center text-[#f4d300] mb-8"
+                  className="flex justify-around gap-4 items-center text-[#ffd300] mb-8"
                   style={{ flexDirection: key % 2 ? 'row-reverse' : 'row' }}
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
@@ -88,7 +108,8 @@ export default function Project() {
                       {item.text}
                     </p>
                     <button
-                      className="py-3 px-6 bg-[#f4d300] rounded-2xl hover:opacity-80 transition-all duration-300 flex gap-2 items-center text-black"
+                      className="py-3 px-6 bg-[#ffd300] rounded-2xl hover:opacity-80 transition-all duration-300 flex gap-2 items-center text-black"
+                      onClick={() => selectProject(item)}
                     >
                       {item.isLock && <Lock size={20} />}
                       See more
@@ -105,7 +126,7 @@ export default function Project() {
               return (
                 <motion.div
                   key={key}
-                  className="text-[#f4d300] flex flex-col items-center gap-4"
+                  className="text-[#ffd300] flex flex-col items-center gap-4"
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true, amount: 0 }}
@@ -122,7 +143,8 @@ export default function Project() {
                       {item.text}
                     </p>
                     <button
-                      className="py-3 px-6 bg-[#f4d300] rounded-2xl hover:opacity-80 transition-all duration-300 flex gap-2 items-center text-black"
+                      className="py-3 px-6 bg-[#ffd300] rounded-2xl hover:opacity-80 transition-all duration-300 flex gap-2 items-center text-black"
+                      onClick={() => selectProject(item)}
                     >
                       {item.isLock && <Lock size={20} />}
                       See more
@@ -133,7 +155,8 @@ export default function Project() {
             })
         }
       </div>
-      <Waves openWave={isOpen} closeWave={close} />
+      <Waves />
+      <Dialog onClose={close} open={isOpen} project={selectedProject} />
     </section>
   )
 }

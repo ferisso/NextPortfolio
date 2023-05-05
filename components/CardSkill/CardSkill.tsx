@@ -25,7 +25,7 @@ export default function CardSkill({ id, title, subtitle, text, textColor = 'whit
 
   return (
     <motion.div
-      whileHover={{ scaleX: 1.03, boxShadow: '0px 0px 4px 1px #f4d300' }}
+      whileHover={{ scaleX: 1.03, boxShadow: '0px 0px 4px 1px #ffd300' }}
       className="w-full h-full rounded-lg p-4 flex flex-col justify-between overflow-hidden relative bg-zinc-900"
       style={{ color: textColor }}
       onMouseEnter={() => playVideo(true)}
