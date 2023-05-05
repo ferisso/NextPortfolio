@@ -74,7 +74,7 @@ export default function Dialog({ open = false, onClose, project }: DialogProps) 
                       }
                     />
                     <p className="font-thin text-sm">
-                      Don't you hava a code?
+                      Don't you have a code?
                       <a
                         href="mailto:fernando.risso@outlook.com.br"
                         className="font-medium underline cursor-pointer ml-1"
