@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { ClassAttributes, InputHTMLAttributes, useEffect, useState } from "react";
 import OtpInput from 'react-otp-input';
 import { X } from "react-feather"
+import SkillsUsed from "../SkillsUsed/SkillsUsed";
 
 interface DialogProps {
   open: Boolean
@@ -92,6 +93,7 @@ export default function Dialog({ open = false, onClose, project }: DialogProps) 
                       {project?.text}
                     </p>
                     <img src={project?.img} className="max-w-xs" />
+                    <SkillsUsed skills={project?.skills} />
                     <div className="text-lg font-medium text-justify max-w-lg">
                       {project?.fullText}
                     </div>

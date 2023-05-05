@@ -42,7 +42,6 @@ export default function CardSkill({ id, title, subtitle, text, textColor = 'whit
       <video id={`video-${id}`} className="h-full absolute top-0 left-0 scale-[5] opacity-25" controls={false} muted loop>
         <source src={video} type="video/mp4" />
       </video>
-      <p className="text-sm font-thin underline cursor-pointer z-[1]">Learn more</p>
     </motion.div>
   )
 }
