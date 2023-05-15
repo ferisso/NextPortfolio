@@ -73,7 +73,7 @@ export default function Dialog({ open = false, onClose, project }: DialogProps) 
                         (props: any) => <input {...props} />
                       }
                     />
-                    <p className="font-thin text-sm">
+                    <p className="font-light text-sm">
                       Don't you have a code?
                       <a
                         href="mailto:fernando.risso@outlook.com.br"
