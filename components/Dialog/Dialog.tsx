@@ -53,7 +53,7 @@ export default function Dialog({ open = false, onClose, project }: DialogProps) 
               {
                 project?.isLock ? (
                   <div className="flex flex-col items-center gap-6 mt-8">
-                    <p className="font-thin text-xl">
+                    <p className="font-light text-xl">
                       Insert the code to go on!
                     </p>
                     <OtpInput
@@ -86,10 +86,10 @@ export default function Dialog({ open = false, onClose, project }: DialogProps) 
                   </div>
                 ) : (
                   <div className="flex items-center flex-col mt-2 text-center gap-2">
-                    <p className="text-4xl font-thin">
+                    <p className="text-4xl font-light">
                       {project?.name}
                     </p>
-                    <p className="text-xl font-thin max-w-lg">
+                    <p className="text-xl font-light max-w-lg">
                       {project?.text}
                     </p>
                     <img src={project?.img} className="max-w-xs" />
